@@ -8,9 +8,9 @@ public class CalculadoraMediaEscolar {
 		
 		JOptionPane.showMessageDialog(null, "Esta é sua média escolar, digite suas próximas notas.");
 		String nomeStr = JOptionPane.showInputDialog("Digite seu nome: \n");
-		String nota1Str = JOptionPane.showInputDialog("Digite a nota do seu primeiro semestre: \n");
+		String nota1Str = JOptionPane.showInputDialog("Digite a nota do seu primeiro semestre: \n").replace(",", ".");
 		double nota1 = Double.parseDouble(nota1Str);
-		String nota2Str = JOptionPane.showInputDialog("Digite a nota do seu segundo semestre: \n");
+		String nota2Str = JOptionPane.showInputDialog("Digite a nota do seu segundo semestre: \n").replace(",", ".");
 		double nota2 = Double.parseDouble(nota2Str);
 		
 		double media = (nota1+nota2)/2;
